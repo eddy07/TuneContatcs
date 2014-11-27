@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images_014"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.tunecontacts.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="90dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/listView1"
+        android:layout_marginBottom="25sp"
+        android:bufferType="spannable"
+        android:focusable="true"
+        android:paddingTop="-10sp"
+        android:shadowColor="#4B0082"
+        android:shadowDx="200"
+        android:shadowDy="200"
+        android:soundEffectsEnabled="true"
+        android:textStyle="bold"
+        android:text="Update" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listView1"
+        android:layout_alignParentLeft="true"
+        android:text="Your Contacts"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listView1"
+        android:layout_alignTop="@+id/textView1" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:background="#CD5C5C"
+        android:paddingTop="-10sp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#00008B"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+</RelativeLayout>
